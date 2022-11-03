@@ -33,12 +33,12 @@ if ENV:
     TOKEN = os.environ.get("TOKEN", None)
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID", "828804574"))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    JOIN_LOGGER = os.environ.get("JOIN_LOGGER", "-1001790627664")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "ShivanshuDeo")
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
@@ -62,17 +62,17 @@ if ENV:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
-    START_IMG = os.environ.get("START_IMG", None)
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    START_IMG = os.environ.get("START_IMG", "https://te.legra.ph/file/4811c5b25251410b015b4.jpg")
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001790627664")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None)
-    API_HASH = os.environ.get("API_HASH", None)
+    API_ID = os.environ.get("API_ID", "24476646")
+    API_HASH = os.environ.get("API_HASH", "4bb8e48a9ad304e19da4b2f92de48851")
 
-    DB_URI = os.environ.get("DATABASE_URL")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://ywxqbejw:7OcghgGl_qTSa6KeLJ1g_TrfBAlO82v6@rosie.db.elephantsql.com/ywxqbejw")
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://champujis12:mamaji12345@cluster0.qln4f1o.mongodb.net/?retryWrites=true&w=majority")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
